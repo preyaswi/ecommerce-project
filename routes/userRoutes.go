@@ -15,7 +15,7 @@ func UserRouter(r *gin.Engine) *gin.Engine {
 	r.POST("/loginwithotp", handlers.LoginWithOtp)
 	r.POST("/otpvalidation", handlers.LoginOtpValidation)
 
-	r.GET("/home", middlewares.UserRetriveCookie, handlers.Home)
+	r.GET("/home", middlewares.UserRetriveCookie, handlers.Home)  
 
 	return r
 }
